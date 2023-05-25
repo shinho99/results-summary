@@ -1,0 +1,264 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+h1, h2, p {
+    font-family: 'Outfit', sans-serif;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    margin: 13px;
+}
+
+.box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: auto;
+    border-radius: 32px;
+    box-shadow:  5px 5px 10px hsl(241, 100%, 89%);
+    left: 25vw;
+    top: 20vh;
+
+}
+
+/*container1*/
+.container1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 32px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 0px;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+}
+
+.container1 .title h2{
+    color: hsl(241, 100%, 89%);
+    font-family: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container1 .totScore {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 150px;
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.totScore h1 {
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-weight: 800;
+    font-size: 64px;
+}
+
+.totScore p {
+    margin-top: 0;
+    color: hsl(241, 100%, 89%);
+    margin-bottom: 20px;
+}
+
+.comment {
+    padding-top: 0px;
+}
+
+.comment h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+.comment p {
+    color: hsl(241, 100%, 89%);
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 40px;
+}
+
+
+/*container2*/
+.container2 {
+    margin: 30px;
+    width: auto;
+    height: 400px;
+}
+
+.tag {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+.score {
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+.container2 h1 {
+    color: hsl(224, 30%, 27%);
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.container2 h4 {
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.container2 p {
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.container2 span {
+    color: hsl(224, 30%, 27%);
+    margin-right: 3px;
+}
+
+/*reaction*/
+#reaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: hsla(0, 100%, 67%, 0.15);
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 270px;
+}
+
+#reaction .tag {
+    color: hsl(0, 100%, 67%);
+}
+
+/*memory*/
+#memory {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: hsla(39, 100%, 56%, 0.15);
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 270px;
+}
+
+#memory .tag {
+    color: hsl(39, 100%, 56%);
+}
+
+/*verbal*/
+#verbal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 8px;
+    background: hsla(166, 100%, 37%, 0.15);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 270px;
+}
+
+#verbal .tag {
+    color: hsl(166, 100%, 37%);
+}
+
+/*visual*/
+#visual {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 8px;
+    background: hsla(234, 85%, 45%, 0.15);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 50px;
+    width: 270px;
+}
+
+#visual .tag {
+    color: hsl(234, 85%, 45%);
+}
+
+button {
+    background: hsl(224, 30%, 27%);
+    color: white;
+    width: 270px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border: none;
+}
+
+@media screen and (max-width:375px) {
+    body {
+        margin: 0;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+    .container1 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-radius: 0 0 32px 32px;
+    }
+
+    .container1 .totScore {
+        margin: auto;
+        justify-content: center;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
